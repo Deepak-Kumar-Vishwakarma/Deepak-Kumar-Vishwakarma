@@ -66,9 +66,8 @@
 ## 🏆 GitHub Trophies
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=deepakvishwakarma&theme=radical&v=2" />
+  <img src="https://github-profile-trophy.vercel.app/?username=Deepak-Kumar-Vishwakarma&theme=radical&no-frame=true&margin-w=15&cache_seconds=1800" />
 </p>
-
 ---
 
 ### 🌐 Connect with Me
