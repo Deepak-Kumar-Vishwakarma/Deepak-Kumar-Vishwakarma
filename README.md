@@ -66,7 +66,7 @@
 ## 🏆 GitHub Trophies
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=deepak-kumar-vishwakarma&theme=onedark&no-frame=true&margin-w=10&row=1" />
+  <img src="https://github-profile-trophy.vercel.app/?username=deepakvishwakarma&theme=radical&v=2" />
 </p>
 
 ---
