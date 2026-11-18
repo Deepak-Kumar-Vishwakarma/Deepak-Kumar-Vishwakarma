@@ -27,11 +27,30 @@ jobs:
       - name: Checkout profile repository
         uses: actions/checkout@v4
 
-      - name: Generate live GitHub data and animated SVGs
+      - name: Validate dashboard generator syntax
+        run: python -m py_compile scripts/update_dashboard.py
+
+      - name: Generate live GitHub data and dashboard graphics
         env:
           GH_TOKEN: ${{ github.token }}
           GH_USERNAME: ${{ github.repository_owner }}
         run: python scripts/update_dashboard.py
+
+      - name: Validate generated data and SVG assets
+        run: |
+          python - <<'PY'
+          import json
+          import xml.etree.ElementTree as ET
+          from pathlib import Path
+
+          data = json.loads(Path("generated/profile-data.json").read_text(encoding="utf-8"))
+          assert data.get("username"), "Missing GitHub username"
+          assert data.get("generated_at"), "Missing generation timestamp"
+          for asset in ("generated/robot-dashboard.svg", "generated/recent-projects.svg"):
+              root = ET.parse(asset).getroot()
+              assert root.tag.endswith("svg"), f"Invalid SVG root: {asset}"
+          print("Dashboard JSON and SVG assets passed validation.")
+          PY
 
       - name: Commit refreshed dashboard assets
         run: |
