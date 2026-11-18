@@ -1,10 +1,8 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:070B18,45:25205A,100:00C2FF&text=DEEPAK%20KUMAR%20VISHWAKARMA&fontSize=34&fontColor=FFFFFF&fontAlignY=38&desc=SOFTWARE%20%7C%20GAME%20DEV%20%7C%20ROBOTICS%20%7C%20IoT&descAlignY=60&descSize=15&animation=fadeIn" width="100%" alt="Animated neon profile banner"/>
+<img src="./generated/robot-dashboard.svg" width="100%" alt="Animated robot dashboard with automatically refreshed GitHub statistics"/>
 
-<a href="https://readme-typing-svg.demolab.com">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=2600&pause=850&color=69D9FF&center=true&vCenter=true&width=760&lines=Turning+ideas+into+real+projects;Building+robots%2C+games+and+software;Exploring+3D+worlds+and+intelligent+systems;Always+learning.+Always+creating." alt="Animated developer introduction"/>
-</a>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=2600&pause=850&color=69D9FF&center=true&vCenter=true&width=760&lines=ROBOTICS+%7C+IoT+%7C+GAME+DEVELOPMENT;Building+robots%2C+games+and+software;Exploring+3D+worlds+and+intelligent+systems;Always+learning.+Always+creating." alt="Animated developer introduction"/>
 
 <br/>
 
@@ -73,38 +71,21 @@
 
 ---
 
-## 🚀 Selected Projects
+## 🚀 Latest Projects — Auto Updated
 
-A selection from my 15 public repositories. Open each project to explore its code and documentation.
+These cards are generated from the repositories you own and refresh every 6 hours.
 
 <div align="center">
 
-<a href="https://github.com/Deepak-Kumar-Vishwakarma/WEATHER_STATION_USING_BLYNK-IOT">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Deepak-Kumar-Vishwakarma&repo=WEATHER_STATION_USING_BLYNK-IOT&theme=tokyonight&hide_border=true&bg_color=0B1020" alt="Weather station with Blynk IoT"/>
-</a>
-<a href="https://github.com/Deepak-Kumar-Vishwakarma/Deepak-Kumar-Vishwakarma-Robo-Vision-Using-VR">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Deepak-Kumar-Vishwakarma&repo=Deepak-Kumar-Vishwakarma-Robo-Vision-Using-VR&theme=tokyonight&hide_border=true&bg_color=0B1020" alt="Robo Vision using VR"/>
-</a>
-<a href="https://github.com/Deepak-Kumar-Vishwakarma/Robo-Race">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Deepak-Kumar-Vishwakarma&repo=Robo-Race&theme=tokyonight&hide_border=true&bg_color=0B1020" alt="Robo Race"/>
-</a>
-<a href="https://github.com/Deepak-Kumar-Vishwakarma/3D-Printer_FDM_personal">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Deepak-Kumar-Vishwakarma&repo=3D-Printer_FDM_personal&theme=tokyonight&hide_border=true&bg_color=0B1020" alt="Custom FDM 3D printer"/>
-</a>
-<a href="https://github.com/Deepak-Kumar-Vishwakarma/Swarm-Knowlege-Exchange">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Deepak-Kumar-Vishwakarma&repo=Swarm-Knowlege-Exchange&theme=tokyonight&hide_border=true&bg_color=0B1020" alt="Swarm Knowledge Exchange"/>
-</a>
-<a href="https://github.com/Deepak-Kumar-Vishwakarma/OMNIZELO">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Deepak-Kumar-Vishwakarma&repo=OMNIZELO&theme=tokyonight&hide_border=true&bg_color=0B1020" alt="OMNIZELO software suite"/>
-</a>
-<a href="https://github.com/Deepak-Kumar-Vishwakarma/Portfolio">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Deepak-Kumar-Vishwakarma&repo=Portfolio&theme=tokyonight&hide_border=true&bg_color=0B1020" alt="Engineering and robotics portfolio"/>
-</a>
-<a href="https://github.com/Deepak-Kumar-Vishwakarma/Nexus-Os">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Deepak-Kumar-Vishwakarma&repo=Nexus-Os&theme=tokyonight&hide_border=true&bg_color=0B1020" alt="NEXUS OS AI-native operating system"/>
+<img src="./generated/recent-projects.svg" width="100%" alt="Automatically updated latest GitHub repositories"/>
+
+<a href="https://github.com/Deepak-Kumar-Vishwakarma?tab=repositories">
+  <img src="https://img.shields.io/badge/EXPLORE-ALL%20REPOSITORIES-18243C?style=for-the-badge&logo=github&logoColor=white" alt="Explore all repositories"/>
 </a>
 
 </div>
+
+---
 
 ---
 
@@ -112,8 +93,11 @@ A selection from my 15 public repositories. Open each project to explore its cod
 
 <div align="center">
 
-<img height="175" src="https://github-readme-stats.vercel.app/api?username=Deepak-Kumar-Vishwakarma&show_icons=true&rank_icon=github&theme=tokyonight&hide_border=true&bg_color=0B1020&cache_seconds=86400" alt="GitHub overview statistics"/>
-<img height="175" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Deepak-Kumar-Vishwakarma&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0B1020&cache_seconds=86400" alt="Most used public repository languages"/>
+<img src="./generated/robot-dashboard.svg" width="100%" alt="Live robot dashboard with GitHub statistics, repository counts, stars, followers and language footprint"/>
+
+<!-- External stats cards retained as optional supplementary views -->
+<img height="175" src="https://github-readme-stats.vercel.app/api?username=Deepak-Kumar-Vishwakarma&show_icons=true&rank_icon=github&theme=tokyonight&hide_border=true&bg_color=0B1020&cache_seconds=21600" alt="Supplementary GitHub statistics"/>
+<img height="175" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Deepak-Kumar-Vishwakarma&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0B1020&cache_seconds=21600" alt="Supplementary language statistics"/>
 
 <br/>
 
@@ -133,7 +117,7 @@ A selection from my 15 public repositories. Open each project to explore its cod
 
 <img src="./profile-3d-contrib/profile-green-animate.svg" width="100%" alt="Animated 3D GitHub contribution calendar"/>
 
-<sub>Automatically regenerated every day with GitHub Actions.</sub>
+<sub>Automatically regenerated every 6 hours with GitHub Actions.</sub>
 
 </div>
 
