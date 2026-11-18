@@ -242,31 +242,31 @@ for i, r in enumerate(recent):
     except Exception:
         date = "Date unavailable"
     url = esc(r.get("html_url") or f"https://github.com/{USER}/{r.get('name', '')}")
-    accent = "#55DCEB" if i % 2 == 0 else "#A58BFF"
+    accent = "#82D1B1" if i % 2 == 0 else "#B7A9E5"
     cards.append(f'''<a href="{url}" target="_blank">
-<rect x="{x}" y="20" width="326" height="164" rx="13" fill="#0B172A" stroke="#294765"/>
+<rect x="{x}" y="20" width="326" height="164" rx="13" fill="#121D22" stroke="#3B514C"/>
 <path d="M{x} 44V33Q{x} 20 {x+13} 20H{x+72}" fill="none" stroke="{accent}" stroke-width="2"/>
 <text x="{x+20}" y="57" class="name">{name}</text>
 <text x="{x+20}" y="88" class="desc">{description}</text>
-<path d="M{x+20} 108H{x+306}" stroke="#29415C"/>
+<path d="M{x+20} 108H{x+306}" stroke="#344944"/>
 <text x="{x+20}" y="135" class="meta">{language}   /   ★ {stars_count}</text>
 <text x="{x+20}" y="160" class="date">PUSHED  {esc(date)}</text>
 <path d="M{x+285} 151h18m-7-7 7 7-7 7" stroke="{accent}" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 </a>''')
 while len(cards) < 4:
     x = 24 + len(cards) * 350
-    cards.append(f'<rect x="{x}" y="20" width="326" height="164" rx="13" fill="#0B172A" stroke="#294765"/><text x="{x+20}" y="57" class="name">More projects</text><text x="{x+20}" y="88" class="desc">Explore all repositories on GitHub.</text>')
+    cards.append(f'<rect x="{x}" y="20" width="326" height="164" rx="13" fill="#121D22" stroke="#3B514C"/><text x="{x+20}" y="57" class="name">More projects</text><text x="{x+20}" y="88" class="desc">Explore all repositories on GitHub.</text>')
 
 projects_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="204" viewBox="0 0 1440 204" role="img" aria-labelledby="pt pd">
 <title id="pt">Recently updated GitHub projects</title><desc id="pd">Four newest non-fork repositories, refreshed every six hours.</desc>
 <defs><style>
-.name{{font:700 15px 'Segoe UI',Arial,sans-serif;fill:#F0F7FF}}
-.desc{{font:13px 'Segoe UI',Arial,sans-serif;fill:#A4B9D2}}
-.meta{{font:600 11px 'Segoe UI',Arial,sans-serif;fill:#75DDF0;letter-spacing:1px}}
-.date{{font:500 10px Consolas,monospace;fill:#6F8CAB;letter-spacing:.7px}}
-a:hover rect{{stroke:#6CEAFF;stroke-width:2}}
+.name{{font:700 15px 'Segoe UI',Arial,sans-serif;fill:#EDF3EF}}
+.desc{{font:13px 'Segoe UI',Arial,sans-serif;fill:#A6B6AF}}
+.meta{{font:600 11px 'Segoe UI',Arial,sans-serif;fill:#8FD2B5;letter-spacing:1px}}
+.date{{font:500 10px Consolas,monospace;fill:#849A91;letter-spacing:.7px}}
+a:hover rect{{stroke:#A5E5CB;stroke-width:2}}
 </style></defs>
-<rect width="1440" height="204" rx="18" fill="#060D1A"/>
+<rect width="1440" height="204" rx="18" fill="#0B1317"/>
 {''.join(cards)}
 </svg>'''
 (OUT / "recent-projects.svg").write_text(projects_svg, encoding="utf-8")
