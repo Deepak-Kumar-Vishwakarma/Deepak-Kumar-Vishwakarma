@@ -1,6 +1,6 @@
 {
   "username": "Deepak-Kumar-Vishwakarma",
-  "generated_at": "2026-11-18T15:14:53.920481+00:00",
+  "generated_at": "2026-11-18T15:15:34.328512+00:00",
   "public_repositories": 8,
   "followers": 1,
   "following": 1,
@@ -9,7 +9,7 @@
   "top_languages": [
     {
       "name": "Python",
-      "repositories": 2
+      "repositories": 1
     },
     {
       "name": "C++",
@@ -21,14 +21,6 @@
     }
   ],
   "recent_repositories": [
-    {
-      "name": "Deepak-Kumar-Vishwakarma",
-      "description": "",
-      "language": "Python",
-      "stars": 0,
-      "url": "https://github.com/Deepak-Kumar-Vishwakarma/Deepak-Kumar-Vishwakarma",
-      "pushed_at": "2026-11-18T15:14:51Z"
-    },
     {
       "name": "auto-build-aseprite",
       "description": "",
@@ -52,7 +44,16 @@
       "stars": 0,
       "url": "https://github.com/Deepak-Kumar-Vishwakarma/3D-Printer_FDM_personal",
       "pushed_at": "2025-08-08T15:35:11Z"
+    },
+    {
+      "name": "WEATHER_STATION_USING_BLYNK-IOT",
+      "description": "",
+      "language": "C++",
+      "stars": 0,
+      "url": "https://github.com/Deepak-Kumar-Vishwakarma/WEATHER_STATION_USING_BLYNK-IOT",
+      "pushed_at": "2025-08-07T09:38:45Z"
     }
   ],
-  "latest_public_activity": "PullRequest · Deepak-Kumar-Vishwakarma/Deepak-Kumar-Vishwakarma · 18 Nov · 14:54 UTC"
+  "latest_public_activity": "PullRequest · Deepak-Kumar-Vishwakarma/Deepak-Kumar-Vishwakarma · 18 Nov · 14:54 UTC",
+  "data_source": "live GitHub API"
 }
