@@ -88,8 +88,8 @@ languages = Counter(r.get("language") for r in repos if r.get("language"))
 top_languages = languages.most_common(5)
 recent = sorted(repos, key=lambda r: r.get("pushed_at") or r.get("updated_at") or "", reverse=True)[:4]
 
-activity = "No recent public activity outside this profile repository"
-activity_available = True
+activity = (cached.get("latest_public_activity") or "Activity unavailable in cached snapshot") if not live else "No recent public activity outside this profile repository"
+activity_available = bool(live or cached.get("latest_public_activity"))
 if live and not events:
     activity_available = True
 for event in events:
