@@ -4,8 +4,6 @@ import datetime as dt
 import html
 import json
 import os
-import textwrap
-import urllib.error
 import urllib.request
 from collections import Counter
 from pathlib import Path
@@ -80,6 +78,8 @@ if live:
     try:
         events = api(f"/users/{USER}/events/public?per_page=30")
     except Exception as exc:
+        activity_available = False
+        activity = "Public activity feed unavailable"
         print(f"Public events unavailable; continuing without activity: {exc}")
 
 stars = sum(int(r.get("stargazers_count") or 0) for r in repos)
@@ -89,6 +89,9 @@ top_languages = languages.most_common(5)
 recent = sorted(repos, key=lambda r: r.get("pushed_at") or r.get("updated_at") or "", reverse=True)[:4]
 
 activity = "No recent public activity outside this profile repository"
+activity_available = True
+if live and not events:
+    activity_available = True
 for event in events:
     repo_name = (event.get("repo") or {}).get("name", "")
     if repo_name.lower() == f"{USER}/{USER}".lower():
@@ -123,6 +126,7 @@ payload = {
         "pushed_at": r.get("pushed_at") or r.get("updated_at") or "",
     } for r in recent],
     "latest_public_activity": activity,
+    "activity_available": activity_available,
 }
 CACHE.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
@@ -172,12 +176,13 @@ dashboard = f'''<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="660
  @keyframes trace{{to{{stroke-dashoffset:-140}}}}
  </style>
 </defs>
-<rect width="1440" height="660" rx="22" fill="url(#bg)"/><rect width="1440" height="590" rx="22" fill="url(#grid)"/>
-<path d="M36 145H1404M36 552H1404" stroke="#3C5148" stroke-opacity=".7"/>
+<rect width="1440" height="660" rx="22" fill="url(#bg)"/><rect width="1440" height="660" rx="22" fill="url(#grid)"/>
+<path d="M36 145H1404M36 552H1404M36 615H1404" stroke="#3C5148" stroke-opacity=".7"/>
 <text x="68" y="66" class="eyebrow">DEEPAK KUMAR VISHWAKARMA  /  ENGINEERING PORTFOLIO</text>
 <text x="68" y="111" class="hero">Building things that move, think &amp; play.</text>
 <text x="70" y="137" class="sub">Robotics · Embedded systems · Computer vision · Game development · 3D fabrication</text>
 <a href="https://portfolio-five-sigma-s3ior1g2jz.vercel.app" target="_blank"><rect x="1100" y="55" width="270" height="34" rx="17" fill="#183129" stroke="#426D5B"/><text x="1235" y="77" text-anchor="middle" class="label" fill="#A2D7BB">OPEN LIVE PORTFOLIO ↗</text></a>
+<text x="1100" y="112" class="label" fill="{status_color}">{status}</text>
 <text x="1370" y="112" text-anchor="end" class="note">{esc(display_time)}</text>
 <!-- verified GitHub metrics -->
 <g>
@@ -188,7 +193,7 @@ dashboard = f'''<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="660
  <rect x="688" y="171" width="290" height="78" rx="9" fill="#172520" stroke="#3B594B"/>
  <text x="708" y="198" class="label">FOLLOWERS</text><text x="708" y="232" class="num">{int(profile.get("followers", 0))}</text>
  <rect x="998" y="171" width="372" height="78" rx="9" fill="#172520" stroke="#3B594B"/>
- <text x="1018" y="198" class="label">TRACKED PROJECTS</text><text x="1018" y="232" class="num">{len(repos)}</text>
+ <text x="1018" y="198" class="label">NON-FORK PROJECT REPOS</text><text x="1018" y="232" class="num">{len(repos)}</text>
 </g>
 <text x="68" y="292" class="section">MY WORK  /  FOUR CONNECTED DISCIPLINES</text>
 <path d="M68 305H1370" stroke="#648276" stroke-opacity=".55" class="trace"/>
