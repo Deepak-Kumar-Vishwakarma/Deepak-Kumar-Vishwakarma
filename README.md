@@ -1,102 +1,139 @@
-<!-- PROFILE HEADER -->
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:090A1A,50:302060,100:00C2FF&text=DEEPAK%20KUMAR%20VISHWAKARMA&fontSize=34&fontColor=FFFFFF&fontAlignY=38&desc=Developer%20%7C%20Game%20Dev%20%7C%20IoT%20Enthusiast&descAlignY=58&descSize=16&animation=fadeIn" width="100%" alt="Animated profile banner"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:070B18,45:25205A,100:00C2FF&text=DEEPAK%20KUMAR%20VISHWAKARMA&fontSize=34&fontColor=FFFFFF&fontAlignY=38&desc=SOFTWARE%20%7C%20GAME%20DEV%20%7C%20ROBOTICS%20%7C%20IoT&descAlignY=60&descSize=15&animation=fadeIn" width="100%" alt="Animated neon profile banner"/>
 
-<a href="https://github.com/Deepak-Kumar-Vishwakarma">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=2800&pause=900&color=8B7CFF&center=true&vCenter=true&width=720&lines=Building+ideas+into+working+projects;Game+Development+%7C+3D+%7C+IoT;Learning%2C+creating%2C+and+shipping" alt="Typing SVG"/>
+<a href="https://readme-typing-svg.demolab.com">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=2600&pause=850&color=69D9FF&center=true&vCenter=true&width=760&lines=Turning+ideas+into+real+projects;Building+robots%2C+games+and+software;Exploring+3D+worlds+and+intelligent+systems;Always+learning.+Always+creating." alt="Animated developer introduction"/>
 </a>
 
-<p>
-  <img src="https://komarev.com/ghpvc/?username=Deepak-Kumar-Vishwakarma&style=for-the-badge&color=7857FF&label=PROFILE+VIEWS" alt="Profile views"/>
-  <img src="https://img.shields.io/github/followers/Deepak-Kumar-Vishwakarma?style=for-the-badge&color=00B8D9&label=FOLLOWERS" alt="GitHub followers"/>
-  <img src="https://img.shields.io/github/stars/Deepak-Kumar-Vishwakarma?affiliations=OWNER%2CCOLLABORATOR&style=for-the-badge&color=9B59B6&label=TOTAL+STARS" alt="GitHub stars"/>
-</p>
+<br/>
+
+<img src="https://komarev.com/ghpvc/?username=Deepak-Kumar-Vishwakarma&style=for-the-badge&color=7657FF&label=PROFILE+VIEWS" alt="Profile views"/>
+<img src="https://img.shields.io/github/followers/Deepak-Kumar-Vishwakarma?style=for-the-badge&logo=github&label=FOLLOWERS&color=00B8D9" alt="Followers"/>
+<img src="https://img.shields.io/github/stars/Deepak-Kumar-Vishwakarma?affiliations=OWNER%2CCOLLABORATOR&style=for-the-badge&logo=github&label=STARS&color=9B59B6" alt="GitHub stars"/>
 
 </div>
 
 ---
 
-## 👨‍🚀 About Me
+## 👋 Hey, I'm Deepak!
 
-I'm **Deepak Kumar Vishwakarma**, a developer from India who enjoys turning ideas into practical software, interactive games, and electronics projects.
+**Developer and engineering student from India**, interested in building useful software and bringing ideas to life through robotics, embedded systems, game development and 3D creation.
 
-- 🔭 Currently building **innovative development projects**
-- 🌱 Learning **advanced web development and game development**
-- 🎮 Interested in **Unity, Unreal Engine, 3D workflows, and interactive experiences**
-- ⚡ Exploring **IoT, embedded systems, and creative hardware projects**
-- 🤝 Open to collaborating on **open-source and game-development projects**
-- 💬 Ask me about **Python, C/C++, Java, React, Django, Unity, and Unreal Engine**
-- 📫 **Email:** [dv2626637@gmail.com](mailto:dv2626637@gmail.com)
+- 🔭 Working on innovative software and engineering projects
+- 🌱 Learning advanced web development and game development
+- 🤖 Exploring robotics, ESP32, IoT and embedded systems
+- 🎮 Interested in Unity, Unreal Engine, Blender and interactive experiences
+- 🧩 Building with Python, C/C++, Java, JavaScript, React and Django
+- 🤝 Open to open-source and game-development collaborations
+- 📫 Reach me at **[dv2626637@gmail.com](mailto:dv2626637@gmail.com)**
 
 ---
 
-## 🧰 Tech Stack
+## ⚡ What I Build
 
 <div align="center">
 
-| Area | Tools & Technologies |
-|:--|:--|
-| **Languages** | ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black) ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white) ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) |
-| **Frontend** | ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) |
-| **Backend & Data** | ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white) |
-| **Game & 3D** | ![Unity](https://img.shields.io/badge/Unity-111111?style=for-the-badge&logo=unity&logoColor=white) ![Unreal Engine](https://img.shields.io/badge/Unreal-313131?style=for-the-badge&logo=unrealengine&logoColor=white) ![Blender](https://img.shields.io/badge/Blender-E87D0D?style=for-the-badge&logo=blender&logoColor=white) |
-| **Tools** | ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white) ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white) |
+<a href="https://github.com/Deepak-Kumar-Vishwakarma?tab=repositories">
+  <img src="https://img.shields.io/badge/01-Robotics%20%26%20IoT-111827?style=for-the-badge&logo=arduino&logoColor=00D8A5" alt="Robotics and IoT"/>
+</a>
+<a href="https://github.com/Deepak-Kumar-Vishwakarma?tab=repositories">
+  <img src="https://img.shields.io/badge/02-Game%20Development-111827?style=for-the-badge&logo=unrealengine&logoColor=8B7CFF" alt="Game development"/>
+</a>
+<a href="https://github.com/Deepak-Kumar-Vishwakarma?tab=repositories">
+  <img src="https://img.shields.io/badge/03-Software%20Engineering-111827?style=for-the-badge&logo=visualstudiocode&logoColor=45C8FF" alt="Software engineering"/>
+</a>
+<a href="https://github.com/Deepak-Kumar-Vishwakarma?tab=repositories">
+  <img src="https://img.shields.io/badge/04-3D%20%26%20Creative%20Tools-111827?style=for-the-badge&logo=blender&logoColor=F59E0B" alt="3D and creative tools"/>
+</a>
+
+</div>
+
+## 🧰 Technology Stack
+
+<div align="center">
+
+**Languages**
+
+<img src="https://skillicons.dev/icons?i=c,cpp,cs,python,java,js,ts&theme=dark" alt="Programming languages"/>
+
+**Web & Backend**
+
+<img src="https://skillicons.dev/icons?i=html,css,react,django,nodejs&theme=dark" alt="Web technologies"/>
+
+**Game Development, 3D & Hardware**
+
+<img src="https://skillicons.dev/icons?i=unity,unreal,blender,arduino&theme=dark" alt="Game development and hardware"/>
+
+**Developer Tools**
+
+<img src="https://skillicons.dev/icons?i=git,github,vscode,visualstudio&theme=dark" alt="Developer tools"/>
 
 </div>
 
 ---
 
-## 🚀 Featured Repositories
+## 🚀 Selected Projects
 
-A few projects from my GitHub workspace:
+A selection from my 15 public repositories. Open each project to explore its code and documentation.
 
 <div align="center">
 
 <a href="https://github.com/Deepak-Kumar-Vishwakarma/WEATHER_STATION_USING_BLYNK-IOT">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Deepak-Kumar-Vishwakarma&repo=WEATHER_STATION_USING_BLYNK-IOT&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Weather station project"/>
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Deepak-Kumar-Vishwakarma&repo=WEATHER_STATION_USING_BLYNK-IOT&theme=tokyonight&hide_border=true&bg_color=0B1020" alt="Weather station with Blynk IoT"/>
 </a>
 <a href="https://github.com/Deepak-Kumar-Vishwakarma/Deepak-Kumar-Vishwakarma-Robo-Vision-Using-VR">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Deepak-Kumar-Vishwakarma&repo=Deepak-Kumar-Vishwakarma-Robo-Vision-Using-VR&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Robo Vision project"/>
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Deepak-Kumar-Vishwakarma&repo=Deepak-Kumar-Vishwakarma-Robo-Vision-Using-VR&theme=tokyonight&hide_border=true&bg_color=0B1020" alt="Robo Vision using VR"/>
 </a>
 <a href="https://github.com/Deepak-Kumar-Vishwakarma/Robo-Race">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Deepak-Kumar-Vishwakarma&repo=Robo-Race&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Robo Race project"/>
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Deepak-Kumar-Vishwakarma&repo=Robo-Race&theme=tokyonight&hide_border=true&bg_color=0B1020" alt="Robo Race"/>
 </a>
 <a href="https://github.com/Deepak-Kumar-Vishwakarma/3D-Printer_FDM_personal">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Deepak-Kumar-Vishwakarma&repo=3D-Printer_FDM_personal&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="3D printer project"/>
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Deepak-Kumar-Vishwakarma&repo=3D-Printer_FDM_personal&theme=tokyonight&hide_border=true&bg_color=0B1020" alt="Custom FDM 3D printer"/>
+</a>
+<a href="https://github.com/Deepak-Kumar-Vishwakarma/Swarm-Knowlege-Exchange">
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Deepak-Kumar-Vishwakarma&repo=Swarm-Knowlege-Exchange&theme=tokyonight&hide_border=true&bg_color=0B1020" alt="Swarm Knowledge Exchange"/>
+</a>
+<a href="https://github.com/Deepak-Kumar-Vishwakarma/OMNIZELO">
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Deepak-Kumar-Vishwakarma&repo=OMNIZELO&theme=tokyonight&hide_border=true&bg_color=0B1020" alt="OMNIZELO software suite"/>
+</a>
+<a href="https://github.com/Deepak-Kumar-Vishwakarma/Portfolio">
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Deepak-Kumar-Vishwakarma&repo=Portfolio&theme=tokyonight&hide_border=true&bg_color=0B1020" alt="Engineering and robotics portfolio"/>
 </a>
 <a href="https://github.com/Deepak-Kumar-Vishwakarma/Game_Development_Portfolio">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Deepak-Kumar-Vishwakarma&repo=Game_Development_Portfolio&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Game development portfolio"/>
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Deepak-Kumar-Vishwakarma&repo=Game_Development_Portfolio&theme=tokyonight&hide_border=true&bg_color=0B1020" alt="Game development portfolio"/>
 </a>
 
 </div>
 
 ---
 
-## 📊 GitHub Analytics
+## 📊 GitHub Live Dashboard
 
 <div align="center">
 
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=Deepak-Kumar-Vishwakarma&show_icons=true&include_all_commits=true&count_private=true&rank_icon=github&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="GitHub statistics"/>
-<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Deepak-Kumar-Vishwakarma&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Most used languages"/>
+<img height="175" src="https://github-readme-stats.vercel.app/api?username=Deepak-Kumar-Vishwakarma&show_icons=true&rank_icon=github&theme=tokyonight&hide_border=true&bg_color=0B1020&cache_seconds=86400" alt="GitHub overview statistics"/>
+<img height="175" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Deepak-Kumar-Vishwakarma&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0B1020&cache_seconds=86400" alt="Most used public repository languages"/>
 
 <br/>
 
-<img src="https://streak-stats.demolab.com?user=Deepak-Kumar-Vishwakarma&theme=tokyonight&hide_border=true&background=0D1117" alt="GitHub contribution streak"/>
+<img src="https://streak-stats.demolab.com?user=Deepak-Kumar-Vishwakarma&theme=tokyonight&hide_border=true&background=0B1020&ring=00C2FF&fire=8B7CFF&currStreakLabel=69D9FF" alt="GitHub contribution streak"/>
 
 <br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Deepak-Kumar-Vishwakarma&bg_color=0D1117&color=9B8CFF&line=00C2FF&point=FFFFFF&area=true&hide_border=true" width="100%" alt="Contribution activity graph"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Deepak-Kumar-Vishwakarma&bg_color=0B1020&color=9B8CFF&line=00C2FF&point=FFFFFF&area=true&hide_border=true&custom_title=Contribution%20Activity" width="100%" alt="Contribution activity graph"/>
 
 </div>
 
 ---
 
-## 🧊 3D Contribution Universe
+## 🧊 3D Contribution World
 
 <div align="center">
 
-<img src="./profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D GitHub contribution visualization"/>
+<img src="./profile-3d-contrib/profile-green-animate.svg" width="100%" alt="Animated 3D GitHub contribution calendar"/>
+
+<sub>Automatically regenerated every day with GitHub Actions.</sub>
 
 </div>
 
@@ -104,37 +141,40 @@ A few projects from my GitHub workspace:
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Deepak-Kumar-Vishwakarma/Deepak-Kumar-Vishwakarma/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Animated contribution snake"/>
+<img src="https://raw.githubusercontent.com/Deepak-Kumar-Vishwakarma/Deepak-Kumar-Vishwakarma/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Animated contribution snake on a dark background"/>
 
 </div>
 
 ---
 
-## 🏆 Achievements
+## 🏆 GitHub Achievements
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=Deepak-Kumar-Vishwakarma&theme=discord&no-frame=true&no-bg=true&margin-w=8&row=1" width="100%" alt="GitHub trophies"/>
+<img src="https://github-profile-trophy.vercel.app/?username=Deepak-Kumar-Vishwakarma&theme=discord&no-frame=true&no-bg=true&margin-w=8&row=1" width="100%" alt="GitHub profile trophies"/>
 
 </div>
 
 ---
 
-## 🤝 Connect With Me
+## 🌐 Connect
 
 <div align="center">
 
+<a href="https://www.linkedin.com/in/deepakkumarvishwakarma/">
+  <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+</a>
 <a href="mailto:dv2626637@gmail.com">
-  <img src="https://img.shields.io/badge/Email-Contact%20Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+  <img src="https://img.shields.io/badge/Email-Say%20Hello-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
 </a>
 <a href="https://github.com/Deepak-Kumar-Vishwakarma">
-  <img src="https://img.shields.io/badge/GitHub-Follow%20Me-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  <img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
 </a>
 
 <br/><br/>
 
-**Thanks for visiting my profile!**
+**Thanks for stopping by — let's build something great!**
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00C2FF,50:302060,100:090A1A&height=100&section=footer" width="100%" alt="Footer banner"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=0:00C2FF,50:25205A,100:070B18" width="100%" alt="Animated footer banner"/>
 
 </div>
