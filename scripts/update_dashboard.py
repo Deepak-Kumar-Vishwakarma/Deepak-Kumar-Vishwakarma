@@ -145,6 +145,8 @@ status_color = "#65F0BD" if live else "#FFC66D"
 activity_text = short(activity, 62)
 tracked = len(repos)
 
+language_line = "   ·   ".join(f"{esc(name)} {count}" for name, count in top_languages[:4]) or "Language metadata unavailable"
+
 dashboard = f'''<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="590" viewBox="0 0 1440 590" role="img" aria-labelledby="title desc">
 <title id="title">Deepak Kumar Vishwakarma — engineering and creative technology portfolio</title>
 <desc id="desc">A work-focused portfolio dashboard featuring robotics and IoT, computer vision, game development, 3D creation, FDM printing and software tools, with live GitHub statistics.</desc>
@@ -222,7 +224,7 @@ dashboard = f'''<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="590
  <path d="M1330 371h-22v14h22v14h-22v14h22m-7-56v-7m-8 70v7" stroke="#90C5D2" stroke-width="1.5" fill="none"/>
 </g>
 <text x="68" y="548" class="label">LANGUAGES IN PUBLIC REPOSITORIES</text>
-{''.join(language_lines)}
+<text x="360" y="548" class="note">{language_line}</text>
 <text x="1370" y="548" text-anchor="end" class="note">AUTOMATIC REFRESH  /  6 HOURS</text>
 </svg>'''
 (OUT / "robot-dashboard.svg").write_text(dashboard, encoding="utf-8")
