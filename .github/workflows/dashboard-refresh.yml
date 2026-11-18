@@ -46,10 +46,21 @@ jobs:
           data = json.loads(Path("generated/profile-data.json").read_text(encoding="utf-8"))
           assert data.get("username"), "Missing GitHub username"
           assert data.get("generated_at"), "Missing generation timestamp"
+          assert isinstance(data.get("is_live"), bool), "Missing live/fallback status"
+          assert isinstance(data.get("public_repositories"), int), "Invalid public repository count"
+          assert isinstance(data.get("tracked_repositories"), int), "Invalid tracked repository count"
+          assert isinstance(data.get("recent_repositories"), list), "Recent repository list missing"
+          assert isinstance(data.get("top_languages"), list), "Language summary missing"
+          for item in data["recent_repositories"]:
+              assert item.get("url", "").startswith("https://github.com/"), "Unsafe or missing repository URL"
           for asset in ("generated/robot-dashboard.svg", "generated/recent-projects.svg"):
               root = ET.parse(asset).getroot()
               assert root.tag.endswith("svg"), f"Invalid SVG root: {asset}"
-          print("Dashboard JSON and SVG assets passed validation.")
+              assert root.attrib.get("viewBox"), f"Missing responsive viewBox: {asset}"
+          dashboard = Path("generated/robot-dashboard.svg").read_text(encoding="utf-8")
+          assert "OPEN LIVE PORTFOLIO" in dashboard, "Portfolio link missing from dashboard"
+          assert "LATEST PUBLIC ACTIVITY" in dashboard, "Activity section missing from dashboard"
+          print("Dashboard JSON, links, and SVG assets passed validation.")
           PY
 
       - name: Commit refreshed dashboard assets
