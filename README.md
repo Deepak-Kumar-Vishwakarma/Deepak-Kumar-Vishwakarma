@@ -1,6 +1,16 @@
 <div align="center">
 
-<img src="./generated/robot-dashboard.svg" width="100%" alt="Animated robot dashboard with automatically refreshed GitHub statistics"/>
+<div align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=2600&pause=850&color=69D9FF&center=true&vCenter=true&width=760&lines=ROBOTICS+%7C+IoT+%7C+GAME+DEVELOPMENT;Building+robots%2C+games+and+software;Exploring+3D+worlds+and+intelligent+systems;Always+learning.+Always+creating." alt="Animated developer introduction"/>
+
+<br/>
+
+<img src="https://komarev.com/ghpvc/?username=Deepak-Kumar-Vishwakarma&style=for-the-badge&color=7657FF&label=PROFILE+VIEWS" alt="Profile views"/>
+<img src="https://img.shields.io/github/followers/Deepak-Kumar-Vishwakarma?style=for-the-badge&logo=github&label=FOLLOWERS&color=00B8D9" alt="Followers"/>
+<img src="https://img.shields.io/github/stars/Deepak-Kumar-Vishwakarma?affiliations=OWNER%2CCOLLABORATOR&style=for-the-badge&logo=github&label=STARS&color=9B59B6" alt="GitHub stars"/>
+
+</div>
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=2600&pause=850&color=69D9FF&center=true&vCenter=true&width=760&lines=ROBOTICS+%7C+IoT+%7C+GAME+DEVELOPMENT;Building+robots%2C+games+and+software;Exploring+3D+worlds+and+intelligent+systems;Always+learning.+Always+creating." alt="Animated developer introduction"/>
 
@@ -85,7 +95,22 @@ These cards are generated from the repositories you own and refresh every 6 hour
 
 </div>
 
----
+## ⭐ Featured Builds
+
+These are selected projects from my existing repositories. They remain pinned here independently of the automatically refreshed project feed.
+
+<div align="center">
+
+<a href="https://github.com/Deepak-Kumar-Vishwakarma/WEATHER_STATION_USING_BLYNK-IOT"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Deepak-Kumar-Vishwakarma&repo=WEATHER_STATION_USING_BLYNK-IOT&theme=tokyonight&hide_border=true&bg_color=0B1020" alt="Weather station using Blynk IoT"/></a>
+<a href="https://github.com/Deepak-Kumar-Vishwakarma/Deepak-Kumar-Vishwakarma-Robo-Vision-Using-VR"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Deepak-Kumar-Vishwakarma&repo=Deepak-Kumar-Vishwakarma-Robo-Vision-Using-VR&theme=tokyonight&hide_border=true&bg_color=0B1020" alt="Robo Vision using VR"/></a>
+<a href="https://github.com/Deepak-Kumar-Vishwakarma/Robo-Race"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Deepak-Kumar-Vishwakarma&repo=Robo-Race&theme=tokyonight&hide_border=true&bg_color=0B1020" alt="Robo Race"/></a>
+<a href="https://github.com/Deepak-Kumar-Vishwakarma/3D-Printer_FDM_personal"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Deepak-Kumar-Vishwakarma&repo=3D-Printer_FDM_personal&theme=tokyonight&hide_border=true&bg_color=0B1020" alt="Custom FDM 3D printer"/></a>
+<a href="https://github.com/Deepak-Kumar-Vishwakarma/Swarm-Knowlege-Exchange"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Deepak-Kumar-Vishwakarma&repo=Swarm-Knowlege-Exchange&theme=tokyonight&hide_border=true&bg_color=0B1020" alt="Swarm Knowledge Exchange"/></a>
+<a href="https://github.com/Deepak-Kumar-Vishwakarma/OMNIZELO"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Deepak-Kumar-Vishwakarma&repo=OMNIZELO&theme=tokyonight&hide_border=true&bg_color=0B1020" alt="OMNIZELO"/></a>
+<a href="https://github.com/Deepak-Kumar-Vishwakarma/Portfolio"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Deepak-Kumar-Vishwakarma&repo=Portfolio&theme=tokyonight&hide_border=true&bg_color=0B1020" alt="Portfolio"/></a>
+<a href="https://github.com/Deepak-Kumar-Vishwakarma/Nexus-Os"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Deepak-Kumar-Vishwakarma&repo=Nexus-Os&theme=tokyonight&hide_border=true&bg_color=0B1020" alt="Nexus OS"/></a>
+
+</div>
 
 ---
 
