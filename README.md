@@ -100,8 +100,8 @@ A selection from my 15 public repositories. Open each project to explore its cod
 <a href="https://github.com/Deepak-Kumar-Vishwakarma/Portfolio">
   <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Deepak-Kumar-Vishwakarma&repo=Portfolio&theme=tokyonight&hide_border=true&bg_color=0B1020" alt="Engineering and robotics portfolio"/>
 </a>
-<a href="https://github.com/Deepak-Kumar-Vishwakarma/Game_Development_Portfolio">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Deepak-Kumar-Vishwakarma&repo=Game_Development_Portfolio&theme=tokyonight&hide_border=true&bg_color=0B1020" alt="Game development portfolio"/>
+<a href="https://github.com/Deepak-Kumar-Vishwakarma/Nexus-Os">
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Deepak-Kumar-Vishwakarma&repo=Nexus-Os&theme=tokyonight&hide_border=true&bg_color=0B1020" alt="NEXUS OS AI-native operating system"/>
 </a>
 
 </div>
