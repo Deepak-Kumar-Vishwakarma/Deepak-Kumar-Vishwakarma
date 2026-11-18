@@ -16,7 +16,7 @@
 - 🌱 I’m currently learning **Advanced Web Development & Game Development**
 - 👯 I’m looking to collaborate on **Open Source & Game Dev Projects**
 - 💬 Ask me about **Python, C/C++, Java, React, Django, Unity, Unreal Engine**
-- 📫 How to reach me: **example@gmail.com**
+- 📫 How to reach me: **dv2626637@gmail.com**
 - ⚡ Fun fact: **I think I am funny 😄**
 
 ---
