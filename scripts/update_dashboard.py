@@ -33,7 +33,7 @@ cache_path = OUT / "profile-data.json"
 try:
     profile = api(f"/users/{USER}")
     repos = api(f"/users/{USER}/repos?per_page=100&sort=updated&type=owner")
-    repos = [r for r in repos if not r.get("fork") and not r.get("archived")]
+    repos = [r for r in repos if not r.get("fork") and not r.get("archived") and r.get("name", "").lower() != USER.lower()]
     live_data = True
 except Exception as error:
     # Keep the last successful snapshot visible during API outages or rate limits.
