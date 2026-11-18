@@ -1,7 +1,9 @@
 {
   "username": "Deepak-Kumar-Vishwakarma",
-  "generated_at": "2026-11-18T15:15:34.328512+00:00",
+  "generated_at": "2026-11-18T15:18:54.141205+00:00",
+  "data_source": "live GitHub API",
   "public_repositories": 8,
+  "tracked_repositories": 6,
   "followers": 1,
   "following": 1,
   "stars_on_nonfork_repositories": 0,
@@ -54,6 +56,5 @@
       "pushed_at": "2025-08-07T09:38:45Z"
     }
   ],
-  "latest_public_activity": "PullRequest · Deepak-Kumar-Vishwakarma/Deepak-Kumar-Vishwakarma · 18 Nov · 14:54 UTC",
-  "data_source": "live GitHub API"
+  "latest_public_activity": "No recent public activity outside this profile repository"
 }
