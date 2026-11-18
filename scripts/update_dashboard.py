@@ -145,101 +145,86 @@ status_color = "#65F0BD" if live else "#FFC66D"
 activity_text = short(activity, 62)
 tracked = len(repos)
 
-dashboard = f'''<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="620" viewBox="0 0 1440 620" role="img" aria-labelledby="title desc">
-<title id="title">Deepak Kumar Vishwakarma — robotics developer command center</title>
-<desc id="desc">A premium dark sci-fi telemetry dashboard with animated radar, repository statistics, language distribution and public activity. Snapshot {esc(display_time)}.</desc>
+dashboard = f'''<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="590" viewBox="0 0 1440 590" role="img" aria-labelledby="title desc">
+<title id="title">Deepak Kumar Vishwakarma — engineering and creative technology portfolio</title>
+<desc id="desc">A work-focused portfolio dashboard featuring robotics and IoT, computer vision, game development, 3D creation, FDM printing and software tools, with live GitHub statistics.</desc>
 <defs>
- <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#050914"/><stop offset=".52" stop-color="#0A1428"/><stop offset="1" stop-color="#10102A"/></linearGradient>
- <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#101E35" stop-opacity=".96"/><stop offset="1" stop-color="#091426" stop-opacity=".96"/></linearGradient>
- <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#31D9E9"/><stop offset="1" stop-color="#4C8DFF"/></linearGradient>
- <linearGradient id="violet" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#B68BFF"/><stop offset="1" stop-color="#6856E8"/></linearGradient>
- <radialGradient id="core"><stop stop-color="#65EFFF" stop-opacity=".35"/><stop offset=".5" stop-color="#3277FF" stop-opacity=".10"/><stop offset="1" stop-color="#3277FF" stop-opacity="0"/></radialGradient>
- <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#7DA8D8" stroke-opacity=".075" stroke-width="1"/></pattern>
- <filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
- <clipPath id="screen"><rect x="34" y="34" width="1372" height="552" rx="18"/></clipPath>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0B1118"/><stop offset=".55" stop-color="#121D23"/><stop offset="1" stop-color="#1B2529"/></linearGradient>
+ <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#A5B8AE" stroke-opacity=".055"/></pattern>
  <style>
- .eyebrow{{font:600 12px 'Segoe UI',Arial,sans-serif;letter-spacing:3px;fill:#7797BA}}
- .title{{font:700 30px 'Segoe UI',Arial,sans-serif;letter-spacing:1.2px;fill:#F0F7FF}}
- .sub{{font:500 14px 'Segoe UI',Arial,sans-serif;fill:#9DB4D0}}
- .metric-label{{font:600 11px 'Segoe UI',Arial,sans-serif;letter-spacing:1.8px;fill:#819AB8}}
- .metric{{font:700 34px 'Segoe UI',Arial,sans-serif;fill:#F5FAFF}}
- .metric-foot{{font:500 11px 'Segoe UI',Arial,sans-serif;fill:#6886A7}}
- .section{{font:700 13px 'Segoe UI',Arial,sans-serif;letter-spacing:2px;fill:#BBD1E8}}
- .lang{{font:600 12px 'Segoe UI',Arial,sans-serif;fill:#C8D9EB}}
- .count{{font:600 11px 'Segoe UI',Arial,sans-serif;fill:#82DDF4}}
- .muted{{font:500 12px 'Segoe UI',Arial,sans-serif;fill:#819AB8}}
- .mono{{font:500 11px Consolas,monospace;fill:#7898B9;letter-spacing:.5px}}
- .orbit{{transform-origin:330px 324px;animation:orbit 28s linear infinite}}
- .scan{{animation:scan 5s ease-in-out infinite}}
- .corepulse{{animation:corepulse 3s ease-in-out infinite}}
- .dash{{stroke-dasharray:5 12;animation:dash 18s linear infinite}}
- @keyframes orbit{{to{{transform:rotate(360deg)}}}}
- @keyframes scan{{0%,100%{{opacity:.2;transform:translateY(-90px)}}50%{{opacity:.85;transform:translateY(90px)}}}}
- @keyframes corepulse{{0%,100%{{opacity:.55}}50%{{opacity:1}}}}
- @keyframes dash{{to{{stroke-dashoffset:-180}}}}
+ .eyebrow{{font:600 11px 'Segoe UI',Arial,sans-serif;letter-spacing:2.5px;fill:#8EA69B}}
+ .hero{{font:700 34px 'Segoe UI',Arial,sans-serif;fill:#F1F5F0}}
+ .sub{{font:400 14px 'Segoe UI',Arial,sans-serif;fill:#AABBB2}}
+ .label{{font:600 10px 'Segoe UI',Arial,sans-serif;letter-spacing:1.5px;fill:#8EA49A}}
+ .num{{font:700 27px 'Segoe UI',Arial,sans-serif;fill:#F2F5F0}}
+ .note{{font:500 10px 'Segoe UI',Arial,sans-serif;fill:#81968C}}
+ .section{{font:700 12px 'Segoe UI',Arial,sans-serif;letter-spacing:1.8px;fill:#D8E4DC}}
+ .cardtitle{{font:700 16px 'Segoe UI',Arial,sans-serif;fill:#F0F4EF}}
+ .copy{{font:400 12px 'Segoe UI',Arial,sans-serif;fill:#A6B6AD}}
+ .tag{{font:600 9px 'Segoe UI',Arial,sans-serif;letter-spacing:1px;fill:#A2D7BB}}
+ .lang{{font:600 11px 'Segoe UI',Arial,sans-serif;fill:#C6D5CC}}
+ .pulse{{animation:pulse 3.6s ease-in-out infinite}}
+ .trace{{stroke-dasharray:5 9;animation:trace 16s linear infinite}}
+ @keyframes pulse{{0%,100%{{opacity:.55}}50%{{opacity:1}}}}
+ @keyframes trace{{to{{stroke-dashoffset:-140}}}}
  </style>
 </defs>
-<rect width="1440" height="620" rx="26" fill="url(#bg)"/>
-<g clip-path="url(#screen)">
- <rect x="34" y="34" width="1372" height="552" fill="url(#grid)"/>
- <path d="M34 132H1406M34 566H1406" stroke="#294461" stroke-opacity=".6"/>
- <path d="M34 34H1406V586H34Z" fill="none" stroke="#294765" stroke-width="1.2"/>
- <!-- left telemetry / sensor core -->
- <circle cx="330" cy="324" r="235" fill="url(#core)"/>
- <circle cx="330" cy="324" r="190" fill="none" stroke="#3C759E" stroke-opacity=".22" stroke-width="1"/>
- <circle cx="330" cy="324" r="166" fill="none" stroke="#57D9F3" stroke-opacity=".28" stroke-dasharray="2 9"/>
- <circle cx="330" cy="324" r="132" fill="none" stroke="#7785FF" stroke-opacity=".42" stroke-dasharray="84 12 3 12" class="orbit"/>
- <circle cx="330" cy="324" r="100" fill="none" stroke="#3CCCEB" stroke-opacity=".28"/>
- <circle cx="330" cy="324" r="74" fill="#0C1B31" stroke="#59D8F2" stroke-opacity=".6" stroke-width="1.5"/>
- <circle cx="330" cy="324" r="57" fill="url(#core)" class="corepulse"/>
- <path d="M330 153V495M159 324H501M209 203L451 445M451 203L209 445" stroke="#3E729A" stroke-opacity=".18"/>
- <g class="orbit"><path d="M330 127l-7 16h14z" fill="#64E8FF" filter="url(#glow)"/><circle cx="330" cy="134" r="4" fill="#D5FBFF"/></g>
- <g filter="url(#glow)" class="corepulse">
-  <path d="M284 324h25l13-24 18 49 14-25h22" fill="none" stroke="#72E9FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="330" cy="324" r="7" fill="#DDFBFF"/>
- </g>
- <path d="M145 324A185 185 0 0 1 515 324" fill="none" stroke="#5DE6FF" stroke-opacity=".28" stroke-width="2" class="dash"/>
- <path d="M145 324A185 185 0 0 0 515 324" fill="none" stroke="#A28BFF" stroke-opacity=".2" stroke-width="2"/>
- <rect x="145" y="245" width="370" height="158" fill="url(#cyan)" opacity=".025" class="scan"/>
- <text x="330" y="540" text-anchor="middle" class="mono">SENSOR ARRAY  /  TELEMETRY ACTIVE</text>
- <!-- top heading -->
- <text x="82" y="80" class="eyebrow">DKV  /  ENGINEERING PROFILE SYSTEM</text>
- <text x="82" y="115" class="title">ROBOTICS &amp; SOFTWARE LAB</text>
- <text x="1360" y="82" text-anchor="end" class="eyebrow">SYSTEM STATUS</text>
- <circle cx="1198" cy="108" r="4" fill="{status_color}" filter="url(#glow)"/>
- <text x="1212" y="113" class="section" fill="{status_color}">{status}</text>
- <text x="1360" y="137" text-anchor="end" class="mono">UPDATED  {esc(display_time)}</text>
- <!-- right data modules -->
- <g>
-  <rect x="590" y="166" width="235" height="128" rx="12" fill="url(#panel)" stroke="#284A68"/>
-  <path d="M590 179V166H603M812 166H825V179" stroke="#55D9EF" stroke-width="2" fill="none"/>
-  <text x="612" y="198" class="metric-label">PUBLIC REPOSITORIES</text>
-  <text x="612" y="247" class="metric">{int(profile.get("public_repos", 0))}</text>
-  <text x="612" y="273" class="metric-foot">{tracked} TRACKED NON-FORK PROJECTS</text>
-  <rect x="842" y="166" width="235" height="128" rx="12" fill="url(#panel)" stroke="#3A3D72"/>
-  <path d="M842 179V166H855M1064 166H1077V179" stroke="#A58BFF" stroke-width="2" fill="none"/>
-  <text x="864" y="198" class="metric-label">TOTAL STARS</text>
-  <text x="864" y="247" class="metric">{stars}</text>
-  <text x="864" y="273" class="metric-foot">ON OWN NON-FORK PROJECTS</text>
-  <rect x="1094" y="166" width="270" height="128" rx="12" fill="url(#panel)" stroke="#284A68"/>
-  <path d="M1094 179V166H1107M1351 166H1364V179" stroke="#55D9EF" stroke-width="2" fill="none"/>
-  <text x="1116" y="198" class="metric-label">FOLLOWERS</text>
-  <text x="1116" y="247" class="metric">{int(profile.get("followers", 0))}</text>
-  <text x="1116" y="273" class="metric-foot">FOLLOWING  {int(profile.get("following", 0))}</text>
- </g>
- <path d="M590 324H1364" stroke="#294765" stroke-opacity=".8"/>
- <text x="590" y="355" class="section">LANGUAGE DISTRIBUTION</text>
- {''.join(language_rows)}
- <path d="M1170 342V475" stroke="#294765"/>
- <text x="1200" y="355" class="section">REPOSITORY FORKS</text>
- <text x="1200" y="398" class="metric">{forks}</text>
- <text x="1200" y="422" class="metric-foot">OWN PROJECT FORKS</text>
- <text x="590" y="520" class="section">LATEST PUBLIC ACTIVITY</text>
- <text x="590" y="545" class="sub">{esc(activity_text)}</text>
- <text x="1360" y="545" text-anchor="end" class="mono">REFRESH CYCLE  /  06H</text>
+<rect width="1440" height="590" rx="22" fill="url(#bg)"/><rect width="1440" height="590" rx="22" fill="url(#grid)"/>
+<path d="M36 145H1404M36 552H1404" stroke="#3C5148" stroke-opacity=".7"/>
+<text x="68" y="66" class="eyebrow">DEEPAK KUMAR VISHWAKARMA  /  ENGINEERING PORTFOLIO</text>
+<text x="68" y="111" class="hero">Building things that move, think &amp; play.</text>
+<text x="70" y="137" class="sub">Robotics · Embedded systems · Computer vision · Game development · 3D fabrication</text>
+<rect x="1100" y="55" width="270" height="34" rx="17" fill="#183129" stroke="#426D5B"/>
+<circle cx="1120" cy="72" r="4" fill="{status_color}" class="pulse"/>
+<text x="1134" y="76" class="label" fill="{status_color}">{status}</text>
+<text x="1370" y="112" text-anchor="end" class="note">{esc(display_time)}</text>
+<!-- verified GitHub metrics -->
+<g>
+ <rect x="68" y="171" width="290" height="78" rx="9" fill="#172520" stroke="#3B594B"/>
+ <text x="88" y="198" class="label">PUBLIC REPOSITORIES</text><text x="88" y="232" class="num">{int(profile.get("public_repos", 0))}</text>
+ <rect x="378" y="171" width="290" height="78" rx="9" fill="#172520" stroke="#3B594B"/>
+ <text x="398" y="198" class="label">PROJECT STARS</text><text x="398" y="232" class="num">{stars}</text>
+ <rect x="688" y="171" width="290" height="78" rx="9" fill="#172520" stroke="#3B594B"/>
+ <text x="708" y="198" class="label">FOLLOWERS</text><text x="708" y="232" class="num">{int(profile.get("followers", 0))}</text>
+ <rect x="998" y="171" width="372" height="78" rx="9" fill="#172520" stroke="#3B594B"/>
+ <text x="1018" y="198" class="label">TRACKED PROJECTS</text><text x="1018" y="232" class="num">{len(repos)}</text>
 </g>
+<text x="68" y="292" class="section">MY WORK  /  FOUR CONNECTED DISCIPLINES</text>
+<path d="M68 305H1370" stroke="#648276" stroke-opacity=".55" class="trace"/>
+<g>
+ <rect x="68" y="326" width="310" height="180" rx="11" fill="#15251F" stroke="#476B57"/>
+ <text x="90" y="357" class="eyebrow">01  /  HARDWARE + FIRMWARE</text>
+ <text x="90" y="392" class="cardtitle">Robotics &amp; IoT</text>
+ <text x="90" y="420" class="copy">ESP32 · Sensors · Blynk · Control</text>
+ <text x="90" y="443" class="copy">Robo Vision · Robo Race · Telemetry</text>
+ <rect x="90" y="465" width="162" height="22" rx="11" fill="#244336"/><text x="103" y="480" class="tag">CONNECTED SYSTEMS</text>
+ <path d="M328 370h25v25h-25zm12-10v10m-12 12h-10m35 0h10m-23 13v10" stroke="#88C7A6" stroke-width="1.5" fill="none"/>
+ <rect x="400" y="326" width="310" height="180" rx="11" fill="#211E2B" stroke="#62557D"/>
+ <text x="422" y="357" class="eyebrow">02  /  REALTIME WORLDS</text>
+ <text x="422" y="392" class="cardtitle">Games &amp; 3D Creation</text>
+ <text x="422" y="420" class="copy">Unity · Unreal Engine · Blender</text>
+ <text x="422" y="443" class="copy">Gameplay · Environments · Pixel art</text>
+ <rect x="422" y="465" width="150" height="22" rx="11" fill="#382E4A"/><text x="435" y="480" class="tag">INTERACTIVE WORLDS</text>
+ <path d="M670 370l19 11v22l-19 11-19-11v-22zM670 370v22m19-11-19 11-19-11m19 11v22" stroke="#B9A9E3" stroke-width="1.4" fill="none"/>
+ <rect x="732" y="326" width="310" height="180" rx="11" fill="#252219" stroke="#74674C"/>
+ <text x="754" y="357" class="eyebrow">03  /  PROTOTYPING</text>
+ <text x="754" y="392" class="cardtitle">3D Printing &amp; Making</text>
+ <text x="754" y="420" class="copy">FDM · Motion systems · Calibration</text>
+ <text x="754" y="443" class="copy">CAD workflows · Physical prototypes</text>
+ <rect x="754" y="465" width="150" height="22" rx="11" fill="#403824"/><text x="767" y="480" class="tag">DIGITAL TO PHYSICAL</text>
+ <path d="M1000 371h23v5h-23zm3 5v34m17-34v34m-26 0h32m-23-24h14m-14 10h14" stroke="#D8BE87" stroke-width="1.5" fill="none"/>
+ <rect x="1064" y="326" width="306" height="180" rx="11" fill="#18252A" stroke="#496571"/>
+ <text x="1086" y="357" class="eyebrow">04  /  SOFTWARE TOOLING</text>
+ <text x="1086" y="392" class="cardtitle">Code &amp; Automation</text>
+ <text x="1086" y="420" class="copy">Python · C/C++ · Java · Web</text>
+ <text x="1086" y="443" class="copy">Aseprite builds · Developer tools</text>
+ <rect x="1086" y="465" width="142" height="22" rx="11" fill="#263D45"/><text x="1099" y="480" class="tag">TOOLS THAT SHIP</text>
+ <path d="M1330 371h-22v14h22v14h-22v14h22m-7-56v-7m-8 70v7" stroke="#90C5D2" stroke-width="1.5" fill="none"/>
+</g>
+<text x="68" y="548" class="label">LANGUAGES IN PUBLIC REPOSITORIES</text>
+{''.join(language_lines)}
+<text x="1370" y="548" text-anchor="end" class="note">AUTOMATIC REFRESH  /  6 HOURS</text>
 </svg>'''
-
 (OUT / "robot-dashboard.svg").write_text(dashboard, encoding="utf-8")
 
 # Compact repository tiles with safe text lengths and real metadata only.
