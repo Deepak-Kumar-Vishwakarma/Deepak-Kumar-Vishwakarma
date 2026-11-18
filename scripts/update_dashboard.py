@@ -106,6 +106,7 @@ payload = {
     "username": USER,
     "generated_at": generated_at,
     "data_source": "live GitHub API" if live else "last successful cached snapshot",
+    "is_live": live,
     "public_repositories": int(profile.get("public_repos", 0)),
     "tracked_repositories": len(repos),
     "followers": int(profile.get("followers", 0)),
@@ -142,12 +143,12 @@ if not language_rows:
 
 status = "LIVE API" if live else "CACHED SNAPSHOT"
 status_color = "#65F0BD" if live else "#FFC66D"
-activity_text = short(activity, 62)
+activity_text = short(activity, 105)
 tracked = len(repos)
 
 language_line = "   ·   ".join(f"{esc(name)} {count}" for name, count in top_languages[:4]) or "Language metadata unavailable"
 
-dashboard = f'''<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="590" viewBox="0 0 1440 590" role="img" aria-labelledby="title desc">
+dashboard = f'''<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="660" viewBox="0 0 1440 660" role="img" aria-labelledby="title desc">
 <title id="title">Deepak Kumar Vishwakarma — engineering and creative technology portfolio</title>
 <desc id="desc">A work-focused portfolio dashboard featuring robotics and IoT, computer vision, game development, 3D creation, FDM printing and software tools, with live GitHub statistics.</desc>
 <defs>
@@ -171,7 +172,7 @@ dashboard = f'''<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="590
  @keyframes trace{{to{{stroke-dashoffset:-140}}}}
  </style>
 </defs>
-<rect width="1440" height="590" rx="22" fill="url(#bg)"/><rect width="1440" height="590" rx="22" fill="url(#grid)"/>
+<rect width="1440" height="660" rx="22" fill="url(#bg)"/><rect width="1440" height="590" rx="22" fill="url(#grid)"/>
 <path d="M36 145H1404M36 552H1404" stroke="#3C5148" stroke-opacity=".7"/>
 <text x="68" y="66" class="eyebrow">DEEPAK KUMAR VISHWAKARMA  /  ENGINEERING PORTFOLIO</text>
 <text x="68" y="111" class="hero">Building things that move, think &amp; play.</text>
@@ -221,9 +222,12 @@ dashboard = f'''<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="590
  <rect x="1086" y="465" width="142" height="22" rx="11" fill="#263D45"/><text x="1099" y="480" class="tag">TOOLS THAT SHIP</text>
  <path d="M1330 371h-22v14h22v14h-22v14h22m-7-56v-7m-8 70v7" stroke="#90C5D2" stroke-width="1.5" fill="none"/>
 </g>
-<text x="68" y="548" class="label">LANGUAGES IN PUBLIC REPOSITORIES</text>
-<text x="360" y="548" class="note">{language_line}</text>
-<text x="1370" y="548" text-anchor="end" class="note">AUTOMATIC REFRESH  /  6 HOURS</text>
+<text x="68" y="548" class="label">LANGUAGE COUNTS  /  REPOSITORIES USING EACH LANGUAGE</text>
+<text x="475" y="548" class="note">{language_line}</text>
+<text x="68" y="582" class="label">LATEST PUBLIC ACTIVITY</text>
+<text x="250" y="582" class="note">{esc(activity_text)}</text>
+<text x="68" y="638" class="note">Source: GitHub public API  ·  Generated {esc(generated_at)}</text>
+<text x="1370" y="638" text-anchor="end" class="note">AUTO-REFRESH  /  EVERY 6 HOURS</text>
 </svg>'''
 (OUT / "robot-dashboard.svg").write_text(dashboard, encoding="utf-8")
 
