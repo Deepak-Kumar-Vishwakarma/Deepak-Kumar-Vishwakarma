@@ -27,9 +27,7 @@
 <text x="68" y="66" class="eyebrow">DEEPAK KUMAR VISHWAKARMA  /  ENGINEERING PORTFOLIO</text>
 <text x="68" y="111" class="hero">Building things that move, think &amp; play.</text>
 <text x="70" y="137" class="sub">Robotics · Embedded systems · Computer vision · Game development · 3D fabrication</text>
-<rect x="1100" y="55" width="270" height="34" rx="17" fill="#183129" stroke="#426D5B"/>
-<circle cx="1120" cy="72" r="4" fill="#65F0BD" class="pulse"/>
-<text x="1134" y="76" class="label" fill="#65F0BD">LIVE API</text>
+<a href="https://portfolio-five-sigma-s3ior1g2jz.vercel.app" target="_blank"><rect x="1100" y="55" width="270" height="34" rx="17" fill="#183129" stroke="#426D5B"/><text x="1235" y="77" text-anchor="middle" class="label" fill="#A2D7BB">OPEN LIVE PORTFOLIO ↗</text></a>
 <text x="1370" y="112" text-anchor="end" class="note">18 Nov 2026  /  15:24 UTC</text>
 <!-- verified GitHub metrics -->
 <g>
