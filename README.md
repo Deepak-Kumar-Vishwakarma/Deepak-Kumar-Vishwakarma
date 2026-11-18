@@ -18,7 +18,7 @@
 
 ## 👋 Hey, I'm Deepak!
 
-**Developer and engineering student from India**, interested in building useful software and bringing ideas to life through robotics, embedded systems, game development and 3D creation.
+**Developer from India**, interested in building useful software and bringing ideas to life through robotics, embedded systems, game development and 3D creation.
 
 - 🔭 Working on innovative software and engineering projects
 - 🌱 Learning advanced web development and game development
@@ -59,7 +59,7 @@
 
 **Web & Backend**
 
-<img src="https://skillicons.dev/icons?i=html,css,react,django,nodejs&theme=dark" alt="Web technologies"/>
+<img src="https://skillicons.dev/icons?i=html,css,react,django&theme=dark" alt="Web technologies"/>
 
 **Game Development, 3D & Hardware**
 
@@ -161,9 +161,6 @@ A selection from my 15 public repositories. Open each project to explore its cod
 
 <div align="center">
 
-<a href="https://www.linkedin.com/in/deepakkumarvishwakarma/">
-  <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-</a>
 <a href="mailto:dv2626637@gmail.com">
   <img src="https://img.shields.io/badge/Email-Say%20Hello-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
 </a>
