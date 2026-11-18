@@ -80,7 +80,7 @@ if not live_data:
     forks = int(cached.get("forks_on_nonfork_repositories", forks))
     top_languages = [(x.get("name", "Other"), int(x.get("repositories", 0))) for x in cached.get("top_languages", [])]
     if not recent:
-        recent = cached.get("recent_repositories", [])
+        recent = [{**r, "stargazers_count": r.get("stars", 0), "html_url": r.get("url", f"https://github.com/{USER}/{r.get('name', '')}")} for r in cached.get("recent_repositories", [])]
 now = dt.datetime.now(dt.timezone.utc)
 updated = now.strftime("%d %b %Y · %H:%M UTC")
 
@@ -188,7 +188,7 @@ dashboard = f'''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.
   <text x="0" y="18" class="label">DEEPAK'S DEVELOPER SYSTEM</text>
   <text x="0" y="59" class="heading">ROBOT ASSISTANT ONLINE</text>
   <circle cx="8" cy="91" r="5" fill="#45F0B0" filter="url(#neon)"/>
-  <text x="23" y="96" class="small">LIVE PUBLIC GITHUB DATA  ·  REFRESHED EVERY 6 HOURS</text>
+  <text x="23" y="96" class="small">{"LIVE" if live_data else "CACHED FALLBACK"} GITHUB DATA  ·  REFRESHED EVERY 6 HOURS</text>
   <g transform="translate(0 130)">
     <rect width="205" height="91" rx="15" fill="#101E3B" stroke="#2B80B7" stroke-opacity=".8"/>
     <text x="18" y="28" class="label">PUBLIC REPOSITORIES</text>
