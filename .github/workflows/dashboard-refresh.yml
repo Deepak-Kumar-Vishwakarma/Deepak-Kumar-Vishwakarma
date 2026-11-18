@@ -1,0 +1,46 @@
+name: Refresh live robot profile dashboard
+
+on:
+  schedule:
+    - cron: "37 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/dashboard-refresh.yml"
+      - "scripts/update_dashboard.py"
+      - "README.md"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: live-profile-dashboard
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout profile repository
+        uses: actions/checkout@v4
+
+      - name: Generate live GitHub data and animated SVGs
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_USERNAME: ${{ github.repository_owner }}
+        run: python scripts/update_dashboard.py
+
+      - name: Commit refreshed dashboard assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add generated/
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: refresh live robot profile dashboard"
+            git push
+          else
+            echo "Dashboard assets are already current."
+          fi
