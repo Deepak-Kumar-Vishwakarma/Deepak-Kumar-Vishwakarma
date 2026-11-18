@@ -5,7 +5,7 @@
 .desc{font:13px 'Segoe UI',Arial,sans-serif;fill:#A6B6AF}
 .meta{font:600 11px 'Segoe UI',Arial,sans-serif;fill:#8FD2B5;letter-spacing:1px}
 .date{font:500 10px Consolas,monospace;fill:#849A91;letter-spacing:.7px}
-a:hover rect{stroke:#6CEAFF;stroke-width:2}
+a:hover rect{stroke:#A5E5CB;stroke-width:2}
 </style></defs>
 <rect width="1440" height="204" rx="18" fill="#0B1317"/>
 <a href="https://github.com/Deepak-Kumar-Vishwakarma/auto-build-aseprite" target="_blank">
@@ -13,7 +13,7 @@ a:hover rect{stroke:#6CEAFF;stroke-width:2}
 <path d="M24 44V33Q24 20 37 20H96" fill="none" stroke="#82D1B1" stroke-width="2"/>
 <text x="44" y="57" class="name">auto-build-aseprite</text>
 <text x="44" y="88" class="desc">Python repository</text>
-<path d="M44 108H330" stroke="#29415C"/>
+<path d="M44 108H330" stroke="#344944"/>
 <text x="44" y="135" class="meta">Python   /   ★ 0</text>
 <text x="44" y="160" class="date">PUSHED  18 Jun 2026</text>
 <path d="M309 151h18m-7-7 7 7-7 7" stroke="#82D1B1" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
@@ -22,7 +22,7 @@ a:hover rect{stroke:#6CEAFF;stroke-width:2}
 <path d="M374 44V33Q374 20 387 20H446" fill="none" stroke="#B7A9E5" stroke-width="2"/>
 <text x="394" y="57" class="name">Game_Development_Portfolio</text>
 <text x="394" y="88" class="desc">Open the repository to inspect the project</text>
-<path d="M394 108H680" stroke="#29415C"/>
+<path d="M394 108H680" stroke="#344944"/>
 <text x="394" y="135" class="meta">Unclassified   /   ★ 0</text>
 <text x="394" y="160" class="date">PUSHED  26 Sep 2025</text>
 <path d="M659 151h18m-7-7 7 7-7 7" stroke="#B7A9E5" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
@@ -31,7 +31,7 @@ a:hover rect{stroke:#6CEAFF;stroke-width:2}
 <path d="M724 44V33Q724 20 737 20H796" fill="none" stroke="#82D1B1" stroke-width="2"/>
 <text x="744" y="57" class="name">3D-Printer_FDM_personal</text>
 <text x="744" y="88" class="desc">Open the repository to inspect the project</text>
-<path d="M744 108H1030" stroke="#29415C"/>
+<path d="M744 108H1030" stroke="#344944"/>
 <text x="744" y="135" class="meta">Unclassified   /   ★ 0</text>
 <text x="744" y="160" class="date">PUSHED  08 Aug 2025</text>
 <path d="M1009 151h18m-7-7 7 7-7 7" stroke="#82D1B1" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
@@ -40,7 +40,7 @@ a:hover rect{stroke:#6CEAFF;stroke-width:2}
 <path d="M1074 44V33Q1074 20 1087 20H1146" fill="none" stroke="#B7A9E5" stroke-width="2"/>
 <text x="1094" y="57" class="name">WEATHER_STATION_USING_BLYNK-…</text>
 <text x="1094" y="88" class="desc">C++ repository</text>
-<path d="M1094 108H1380" stroke="#29415C"/>
+<path d="M1094 108H1380" stroke="#344944"/>
 <text x="1094" y="135" class="meta">C++   /   ★ 0</text>
 <text x="1094" y="160" class="date">PUSHED  07 Aug 2025</text>
 <path d="M1359 151h18m-7-7 7 7-7 7" stroke="#B7A9E5" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
