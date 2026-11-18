@@ -4,6 +4,8 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=16&duration=2800&pause=900&color=8AD8BB&center=true&vCenter=true&width=760&lines=Building+robots+and+connected+systems;Creating+interactive+worlds+and+game+assets;Prototyping+hardware+and+developer+tools;Turning+ideas+into+working+projects" alt="Animated introduction"/>
 
+<a href="https://portfolio-five-sigma-s3ior1g2jz.vercel.app"><img src="https://img.shields.io/badge/PORTFOLIO-Open%20Website-416B5B?style=flat-square&logo=vercel&logoColor=white" alt="Open live portfolio website"/></a>
+
 <img src="https://komarev.com/ghpvc/?username=Deepak-Kumar-Vishwakarma&style=flat-square&color=416B5B&label=PROFILE+VIEWS" alt="Profile views"/>
 <img src="https://img.shields.io/github/followers/Deepak-Kumar-Vishwakarma?style=flat-square&logo=github&label=FOLLOWERS&color=416B5B" alt="Followers"/>
 <img src="https://img.shields.io/github/stars/Deepak-Kumar-Vishwakarma?affiliations=OWNER%2CCOLLABORATOR&style=flat-square&logo=github&label=STARS&color=786B9C" alt="GitHub stars"/>
@@ -22,6 +24,7 @@ I'm a developer and maker from India interested in building across the boundary 
 - **Automate:** Python utilities, build pipelines and developer tooling
 - **Explore:** C/C++, Python, Java, React and Django
 
+🌐 **Portfolio:** [portfolio-five-sigma-s3ior1g2jz.vercel.app](https://portfolio-five-sigma-s3ior1g2jz.vercel.app) — my dedicated project and personal website  
 📫 **Contact:** [dv2626637@gmail.com](mailto:dv2626637@gmail.com)
 
 ## Engineering dashboard
@@ -71,7 +74,9 @@ Python, C/C++, Java, web technologies, automation and creative-tool build workfl
 
 ## Selected public projects
 
-The cards below link to public repositories. The first row highlights robotics and physical-computing work; the second covers game development and tooling.
+The cards below link to public repositories. The first row highlights robotics and physical-computing work; the second covers game development and tooling. The compact panel below is regenerated from repository metadata by GitHub Actions.
+
+<img src="./generated/recent-projects.svg" width="100%" alt="Recently updated public GitHub projects with repository metadata"/>
 
 <div align="center">
 
@@ -85,7 +90,7 @@ The cards below link to public repositories. The first row highlights robotics a
 
 </div>
 
-[Browse all public repositories →](https://github.com/Deepak-Kumar-Vishwakarma?tab=repositories)
+[Browse all public repositories →](https://github.com/Deepak-Kumar-Vishwakarma?tab=repositories) · [Open live portfolio website →](https://portfolio-five-sigma-s3ior1g2jz.vercel.app)
 
 ## Technology
 
