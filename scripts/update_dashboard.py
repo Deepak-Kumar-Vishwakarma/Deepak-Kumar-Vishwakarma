@@ -29,20 +29,58 @@ def api(path):
 def esc(value):
     return html.escape(str(value or ""), quote=True)
 
-profile = api(f"/users/{USER}")
-repos = api(f"/users/{USER}/repos?per_page=100&sort=updated&type=owner")
-repos = [r for r in repos if not r.get("fork") and not r.get("archived")]
-events = []
+cache_path = OUT / "profile-data.json"
 try:
-    events = api(f"/users/{USER}/events/public?per_page=10")
-except Exception:
-    pass
+    profile = api(f"/users/{USER}")
+    repos = api(f"/users/{USER}/repos?per_page=100&sort=updated&type=owner")
+    repos = [r for r in repos if not r.get("fork") and not r.get("archived")]
+    live_data = True
+except Exception as error:
+    # Keep the last successful snapshot visible during API outages or rate limits.
+    print(f"GitHub API unavailable; using cached dashboard data: {error}")
+    live_data = False
+    try:
+        cached = json.loads(cache_path.read_text(encoding="utf-8"))
+    except Exception:
+        cached = {}
+    profile = {
+        "public_repos": cached.get("public_repositories", 0),
+        "followers": cached.get("followers", 0),
+        "following": cached.get("following", 0),
+    }
+    repos = [{
+        "name": r.get("name", "repository"),
+        "description": r.get("description", ""),
+        "language": r.get("language", ""),
+        "stargazers_count": r.get("stars", 0),
+        "forks_count": 0,
+        "html_url": r.get("url", ""),
+        "pushed_at": r.get("pushed_at", ""),
+        "updated_at": r.get("pushed_at", ""),
+        "fork": False,
+        "archived": False,
+    } for r in cached.get("recent_repositories", [])]
+    if not repos:
+        repos = []
+
+events = []
+if live_data:
+    try:
+        events = api(f"/users/{USER}/events/public?per_page=10")
+    except Exception:
+        pass
 
 stars = sum(int(r.get("stargazers_count") or 0) for r in repos)
 forks = sum(int(r.get("forks_count") or 0) for r in repos)
 languages = Counter(r.get("language") for r in repos if r.get("language"))
 top_languages = languages.most_common(5)
 recent = sorted(repos, key=lambda r: r.get("pushed_at") or r.get("updated_at") or "", reverse=True)[:4]
+if not live_data:
+    stars = int(cached.get("stars_on_nonfork_repositories", stars))
+    forks = int(cached.get("forks_on_nonfork_repositories", forks))
+    top_languages = [(x.get("name", "Other"), int(x.get("repositories", 0))) for x in cached.get("top_languages", [])]
+    if not recent:
+        recent = cached.get("recent_repositories", [])
 now = dt.datetime.now(dt.timezone.utc)
 updated = now.strftime("%d %b %Y · %H:%M UTC")
 
@@ -74,6 +112,7 @@ payload = {
         for r in recent
     ],
     "latest_public_activity": last_activity,
+    "data_source": "live GitHub API" if live_data else "cached last-known snapshot",
 }
 (OUT / "profile-data.json").write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
